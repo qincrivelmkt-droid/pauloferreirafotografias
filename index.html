@@ -94,18 +94,20 @@ nav.solid{background:rgba(12,12,12,.94);backdrop-filter:blur(14px);padding:13px 
 
 /* ---------- PROOF BAR ---------- */
 .proofbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
-.proofbar .grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.proofbar .item{padding:34px 22px;text-align:center;border-right:1px solid var(--line)}
-.proofbar .item:last-child{border-right:0}
-.proofbar .n{font-family:var(--serif);font-size:2.1rem;color:var(--gold);line-height:1}
-.proofbar .l{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);margin-top:10px}
+.proofbar .single{padding:30px 22px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.proofbar .st{color:var(--gold);letter-spacing:.22em;font-size:.86rem}
+.proofbar .n{font-family:var(--serif);font-size:2rem;color:var(--gold);line-height:1}
+.proofbar .l{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
+
+/* CTA intermediário */
+.ctarow{text-align:center;margin-top:60px}
 
 /* ---------- SPLIT ---------- */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:center}
 .split.rev .col-img{order:2}
-.col-img img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.col-img img{width:100%;aspect-ratio:2/3;object-fit:cover}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.duo img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.duo img{aspect-ratio:2/3;object-fit:cover;width:100%}
 .duo .tall{margin-top:38px}
 
 .lead{font-size:1.06rem;color:var(--ink-dim);margin-top:22px}
@@ -119,15 +121,10 @@ nav.solid{background:rgba(12,12,12,.94);backdrop-filter:blur(14px);padding:13px 
 .gaze .cell p{font-size:.94rem;color:var(--ink-dim)}
 
 /* ---------- GALLERY ---------- */
-.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:56px}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s;filter:saturate(.94)}
-.gal figure{overflow:hidden;position:relative}
-.gal figure:hover img{transform:scale(1.05);filter:saturate(1.05)}
-.s4{grid-column:span 4;aspect-ratio:3/4}
-.s6{grid-column:span 6;aspect-ratio:4/3}
-.s3{grid-column:span 3;aspect-ratio:3/4}
-.s8{grid-column:span 8;aspect-ratio:16/10}
-.s12{grid-column:span 12;aspect-ratio:21/9}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:56px}
+.gal figure{overflow:hidden;position:relative;aspect-ratio:2/3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s}
+.gal figure:hover img{transform:scale(1.04)}
 
 /* ---------- TRUST ---------- */
 .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:52px}
@@ -209,8 +206,7 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
   .proofbar .grid{grid-template-columns:1fr 1fr}
   .proofbar .item:nth-child(2){border-right:0}
   .proofbar .item:nth-child(1),.proofbar .item:nth-child(2){border-bottom:1px solid var(--line)}
-  .s4,.s6,.s3,.s8{grid-column:span 6}
-  .s12{grid-column:span 12;aspect-ratio:16/9}
+  .gal{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:640px){
   body{font-size:16px}
@@ -224,7 +220,7 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
   .tgrid{columns:1}
   .trust{grid-template-columns:1fr}
   .nav-cta{display:none}
-  .s4,.s6,.s3,.s8{grid-column:span 12;aspect-ratio:3/4}
+  .gal{grid-template-columns:1fr;gap:16px}
   .duo .tall{margin-top:0}
 }
 </style>
@@ -249,7 +245,7 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
   <div class="hero-in">
     <span class="eyebrow">Fotografia de casamento · Florianópolis</span>
     <h1>Um dia para viver.<br><em>Imagens para reviver.</em></h1>
-    <p class="sub">Dois fotógrafos, dois olhares e a sua história inteira. Editorial na estética, verdade na emoção.</p>
+    <p class="sub">Casamentos em Florianópolis e região, com Paulo e Paula juntos em toda a cobertura.</p>
     <a href="#consulta" class="btn btn-solid btn-lg">Consultar disponibilidade</a>
   </div>
   <div class="hero-foot">Agenda limitada · Poucos casamentos por temporada</div>
@@ -258,68 +254,40 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
 <!-- PROOF BAR -->
 <section class="proofbar" style="padding:0">
   <div class="wrap" style="padding:0">
-    <div class="grid">
-      <div class="item"><div class="n">5,0</div><div class="l">Avaliação no Google</div></div>
-      <div class="item"><div class="n">2</div><div class="l">Fotógrafos em toda cobertura</div></div>
-      <div class="item"><div class="n">650+</div><div class="l">Fotos tratadas entregues</div></div>
-      <div class="item"><div class="n">7h</div><div class="l">De cobertura contínua</div></div>
+    <div class="single">
+      <span class="st">★★★★★</span>
+      <span class="n">5,0</span>
+      <span class="l">Avaliação no Google</span>
     </div>
   </div>
 </section>
 
-<!-- DOIS OLHARES -->
-<section>
-  <div class="wrap">
-    <div class="split">
-      <div class="col-img rv">
-        <div class="duo">
-          <img src="assets/img/g02.jpg" alt="Entrada da noiva">
-          <img src="assets/img/g06.jpg" class="tall" alt="Noivos abraçados">
-        </div>
-      </div>
-      <div class="rv">
-        <span class="eyebrow">Dois olhares</span>
-        <h2 style="margin-top:18px">Uma história<br>inteira.</h2>
-        <div class="rule left"></div>
-        <p class="lead">Enquanto Paulo acompanha a noiva com um olhar de trás, Paula registra a reação do noivo e a entrada sob a perspectiva de quem espera no altar.</p>
-        <p class="lead">Não para produzir mais imagens. Para preservar a história com profundidade, presença e verdade — inclusive aquilo que vocês, ali, não conseguem ver.</p>
-      </div>
-    </div>
-
-    <div class="gaze rv">
-      <div class="cell"><div class="n">01</div><h4>A reação</h4><p>O rosto de quem espera, no instante exato em que a porta se abre.</p></div>
-      <div class="cell"><div class="n">02</div><h4>A entrada de frente</h4><p>A noiva chegando, sob o ponto de vista do noivo.</p></div>
-      <div class="cell"><div class="n">03</div><h4>A entrada de trás</h4><p>O caminho, o vestido, a igreja inteira olhando para vocês.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- LINGUAGEM + GALERIA -->
+<!-- GALERIA -->
 <section class="sec-soft">
   <div class="wrap">
-    <div style="text-align:center;max-width:720px;margin:0 auto" class="rv">
-      <span class="eyebrow">A linguagem</span>
-      <h2 style="margin-top:18px">Editorial na estética.<br>Verdade na emoção.</h2>
-      <div class="rule"></div>
-      <p class="lead">Conduzimos quando necessário e desaparecemos quando o momento pede. O resultado é o equilíbrio entre imagens cuidadosamente construídas e emoções que não poderiam ser ensaiadas.</p>
+    <div class="gal" style="margin-top:0">
+      <figure class="rv"><img src="assets/img/g01.jpg" alt="Beijo dos noivos ao pôr do sol com o véu ao vento" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g02.jpg" alt="Retrato da noiva com a renda do vestido" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g03.jpg" alt="Saída dos noivos entre pétalas" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g04.jpg" alt="Cerimônia à beira-mar" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g05.jpg" alt="Noiva no deck sobre a água" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g06.jpg" alt="Noivos ao entardecer" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g07.jpg" alt="Saída da igreja em preto e branco" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g08.jpg" alt="Noiva descendo a escada" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g09.jpg" alt="Cerimônia sob estrutura de vidro" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g10.jpg" alt="Beijo dos noivos entre as flores" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g11.jpg" alt="Detalhe do vestido da noiva" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g12.jpg" alt="Noivos caminhando em preto e branco" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g13.jpg" alt="Decoração floral da recepção" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g14.jpg" alt="Retrato da noiva antes da cerimônia" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g15.jpg" alt="Celebração na saída dos noivos" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g16.jpg" alt="Retrato dos noivos" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g17.jpg" alt="Noiva no deck entre as palmeiras" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g18.jpg" alt="Brinde dos noivos em preto e branco" loading="lazy"></figure>
     </div>
 
-    <div class="gal">
-      <figure class="s6 rv"><img src="assets/img/g10.jpg" alt="Cerimônia ao ar livre" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/g04.jpg" alt="Noiva ao entardecer" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/d01.jpg" alt="Detalhes do sapato da noiva" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/g05.jpg" alt="Noiva sob a árvore" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/g09.jpg" alt="Entrada da noiva no espelho d'água" loading="lazy"></figure>
-      <figure class="s6 rv"><img src="assets/img/d04.jpg" alt="Noivos ao pôr do sol" loading="lazy"></figure>
-      <figure class="s4 rv"><img src="assets/img/g14.jpg" alt="Noivos entre as flores" loading="lazy"></figure>
-      <figure class="s4 rv"><img src="assets/img/g03.jpg" alt="Beijo na cerimônia" loading="lazy"></figure>
-      <figure class="s4 rv"><img src="assets/img/g01.jpg" alt="Brinde dos noivos em preto e branco" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/d02.jpg" alt="Decoração floral" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/g12.jpg" alt="Noiva com o buquê" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/g13.jpg" alt="Festa em preto e branco" loading="lazy"></figure>
-      <figure class="s3 rv"><img src="assets/img/d03.jpg" alt="Alianças e detalhes" loading="lazy"></figure>
-      <figure class="s6 rv"><img src="assets/img/g07.jpg" alt="Saída da igreja com o véu ao vento" loading="lazy"></figure>
-      <figure class="s6 rv"><img src="assets/img/g11.jpg" alt="Ensaio pré-wedding na praia" loading="lazy"></figure>
+    <div class="ctarow rv">
+      <a href="#consulta" class="btn btn-solid btn-lg">Consultar disponibilidade</a>
     </div>
   </div>
 </section>
@@ -378,6 +346,9 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
           <div class="cell"><h4>Domínio de luz</h4><p>Iluminação para igrejas, espaços externos, ambientes escuros e festas.</p></div>
           <div class="cell"><h4>Proteção dos arquivos</h4><p>Fluxo organizado de cópia e armazenamento após o casamento.</p></div>
         </div>
+        <div style="margin-top:34px">
+          <a href="#consulta" class="btn btn-solid">Consultar disponibilidade</a>
+        </div>
       </div>
       <div class="col-img rv"><img src="assets/img/conf.jpg" alt="Cerimônia vista do corredor"></div>
     </div>
@@ -413,6 +384,10 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
       <div class="tcard rv"><p>“Vocês juntos têm olhares que nem todos conseguem captar. Tão detalhistas em cada momento. Trabalho impecável.”</p><div class="who">Thamara &amp; Brayan<span class="src">Depoimento enviado após a entrega</span></div></div>
 
       <div class="tcard rv"><p>“Se você quer um fotógrafo que registre tudo, até os mínimos detalhes, e que faça a diferença deixando todos à vontade, é o Paulo. Do pré-wedding ao dia da festa, indico, indico e indico.”</p><div class="who">Jessica Regis<span class="src">★★★★★ Avaliação no Google</span></div></div>
+    </div>
+
+    <div class="ctarow rv">
+      <a href="#consulta" class="btn btn-solid btn-lg" style="border-color:var(--ink-dark);background:var(--ink-dark);color:#F3EEE6">Consultar disponibilidade</a>
     </div>
   </div>
 </section>
