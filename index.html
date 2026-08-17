@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paulo &amp; Paula | Fotografia de Casamento em Florianópolis</title>
-<meta name="description" content="Dois fotógrafos, dois olhares e uma história inteira. Fotografia de casamento editorial em Florianópolis e região. Consulte a disponibilidade da sua data.">
+<meta name="description" content="Fotografia de casamento em Florianópolis e região, com Paulo e Paula juntos em toda a cobertura. Nota 5,0 no Google. Consulte a disponibilidade da sua data.">
 <meta property="og:title" content="Paulo &amp; Paula | Fotografia de Casamento">
-<meta property="og:description" content="Vocês planejaram um dia para viver. Nós criamos as imagens pelas quais ele continuará existindo.">
+<meta property="og:description" content="Um dia para viver. Imagens para reviver.">
 <meta property="og:image" content="assets/img/hero.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
 <!-- ====== META PIXEL · Paulo Ferreira Fotografias ====== -->
 <script>
@@ -28,16 +28,10 @@ fbq('track', 'PageView');
 
 <style>
 :root{
-  --bg:#0C0C0C;
-  --bg-soft:#141313;
-  --bg-cream:#F3EEE6;
-  --ink:#EDE6DB;
-  --ink-dim:#9C9388;
-  --ink-dark:#1A1817;
-  --gold:#C0A268;
+  --bg:#0C0C0C;--bg-soft:#141313;--bg-cream:#F3EEE6;
+  --ink:#EDE6DB;--ink-dim:#9C9388;--ink-dark:#1A1817;--gold:#C0A268;
   --line:rgba(237,230,219,.14);
-  --serif:'Cormorant Garamond',Georgia,serif;
-  --sans:'Jost',-apple-system,Segoe UI,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',-apple-system,Segoe UI,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -45,183 +39,123 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:3
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 28px}
-.wrap-narrow{max-width:860px}
 
-h1,h2,h3,.serif{font-family:var(--serif);font-weight:300;line-height:1.12;letter-spacing:.01em}
-h1{font-size:clamp(2.6rem,6.4vw,5rem)}
-h2{font-size:clamp(2rem,4.4vw,3.4rem)}
-h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
-
-.eyebrow{font-family:var(--sans);font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:400}
-.dim{color:var(--ink-dim)}
-.rule{width:56px;height:1px;background:var(--gold);margin:26px auto;opacity:.8}
-.rule.left{margin:26px 0}
-
-section{padding:clamp(72px,10vw,140px) 0;position:relative}
-.sec-cream{background:var(--bg-cream);color:var(--ink-dark)}
-.sec-cream .dim{color:#6B6157}
-.sec-cream .eyebrow{color:#9A7B45}
+h1,h2{font-family:var(--serif);font-weight:300;line-height:1.14;letter-spacing:.01em}
+h2{font-size:clamp(1.9rem,4vw,3rem)}
+.eyebrow{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.rule{width:52px;height:1px;background:var(--gold);margin:24px auto;opacity:.8}
+.rule.left{margin:24px 0}
+.lead{font-size:1.02rem;color:var(--ink-dim);margin-top:20px}
+section{padding:clamp(64px,8vw,110px) 0;position:relative}
 .sec-soft{background:var(--bg-soft)}
+.sec-cream{background:var(--bg-cream);color:var(--ink-dark)}
+.sec-cream .lead{color:#5E554B}
+.sec-cream .eyebrow{color:#9A7B45}
 
-/* ---------- NAV ---------- */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:background .4s,padding .4s,box-shadow .4s}
-nav.solid{background:rgba(12,12,12,.94);backdrop-filter:blur(14px);padding:13px 0;box-shadow:0 1px 0 var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-family:var(--serif);font-size:1.18rem;letter-spacing:.22em;text-transform:uppercase;color:#fff}
-.brand small{display:block;font-family:var(--sans);font-size:.55rem;letter-spacing:.3em;color:var(--ink-dim);margin-top:3px}
-
-.btn{display:inline-block;font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;
+/* botões */
+.btn{display:inline-block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;
   padding:16px 30px;border:1px solid var(--gold);color:var(--gold);background:transparent;cursor:pointer;transition:.35s;white-space:nowrap}
 .btn:hover{background:var(--gold);color:#0C0C0C}
 .btn-solid{background:var(--gold);color:#0C0C0C}
 .btn-solid:hover{background:#D4B67C;border-color:#D4B67C}
 .btn-lg{padding:20px 44px;font-size:.75rem}
-.btn-block{display:block;width:100%;text-align:center}
 
-/* ---------- HERO ---------- */
-.hero{height:100vh;height:100svh;min-height:620px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 0;transition:.4s}
+nav.solid{background:rgba(12,12,12,.95);backdrop-filter:blur(14px);padding:12px 0;box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-family:var(--serif);font-size:1.1rem;letter-spacing:.2em;text-transform:uppercase;color:#fff}
+.brand small{display:block;font-family:var(--sans);font-size:.53rem;letter-spacing:.28em;color:var(--ink-dim);margin-top:3px}
+
+/* hero */
+.hero{height:100vh;height:100svh;min-height:560px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center}
 .hero-bg{position:absolute;inset:0;overflow:hidden}
 .hero-bg picture{display:block;width:100%;height:100%}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center center;transform:scale(1.05);animation:kb 18s ease-out forwards}
-@keyframes kb{to{transform:scale(1)}}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.66) 0%,rgba(8,8,8,.5) 45%,rgba(8,8,8,.82) 100%)}
-.hero-in{position:relative;z-index:2;max-width:760px;padding:0 28px}
-.hero h1{margin:18px 0 0;color:#fff;font-size:clamp(2.05rem,4.6vw,3.6rem);line-height:1.14;text-shadow:0 2px 34px rgba(0,0,0,.45)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.66) 0%,rgba(8,8,8,.5) 45%,rgba(8,8,8,.84) 100%)}
+.hero-in{position:relative;z-index:2;max-width:720px;padding:0 28px}
+.hero h1{margin:16px 0 0;color:#fff;font-size:clamp(2.05rem,4.6vw,3.6rem);line-height:1.14;text-shadow:0 2px 34px rgba(0,0,0,.45)}
 .hero h1 em{font-style:italic;color:#EBD9B4}
-.hero p.sub{max-width:460px;margin:20px auto 0;font-size:.95rem;color:#D6CFC5;line-height:1.65}
-.hero .btn{margin-top:32px}
-.hero-foot{position:absolute;bottom:30px;left:0;right:0;z-index:2;text-align:center;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(237,230,219,.5)}
+.hero p.sub{max-width:440px;margin:18px auto 0;font-size:.94rem;color:#D6CFC5;line-height:1.6}
+.hero .btn{margin-top:30px}
+.hero-foot{position:absolute;bottom:26px;left:0;right:0;z-index:2;text-align:center;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(237,230,219,.5)}
 
-/* ---------- PROOF BAR ---------- */
+/* prova */
 .proofbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
-.proofbar .single{padding:30px 22px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
-.proofbar .st{color:var(--gold);letter-spacing:.22em;font-size:.86rem}
-.proofbar .n{font-family:var(--serif);font-size:2rem;color:var(--gold);line-height:1}
-.proofbar .l{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
+.proofbar .single{padding:26px 22px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.proofbar .st{color:var(--gold);letter-spacing:.22em;font-size:.84rem}
+.proofbar .n{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1}
+.proofbar .l{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim)}
 
-/* CTA intermediário */
-.ctarow{text-align:center;margin-top:60px}
-
-/* ---------- SPLIT ---------- */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,88px);align-items:center}
-.split.rev .col-img{order:2}
-.col-img img{width:100%;aspect-ratio:2/3;object-fit:cover}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.duo img{aspect-ratio:2/3;object-fit:cover;width:100%}
-.duo .tall{margin-top:38px}
-
-.lead{font-size:1.06rem;color:var(--ink-dim);margin-top:22px}
-.sec-cream .lead{color:#5E554B}
-
-/* ---------- TWO GAZES ---------- */
-.gaze{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:56px}
-.gaze .cell{background:var(--bg);padding:34px 26px}
-.gaze .cell .n{font-family:var(--serif);font-size:.9rem;color:var(--gold);letter-spacing:.24em;text-transform:uppercase}
-.gaze .cell h4{font-family:var(--serif);font-size:1.45rem;font-weight:300;margin:12px 0 10px}
-.gaze .cell p{font-size:.94rem;color:var(--ink-dim)}
-
-/* ---------- GALLERY ---------- */
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:56px}
-.gal figure{overflow:hidden;position:relative;aspect-ratio:2/3}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s}
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal figure{overflow:hidden;aspect-ratio:2/3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
 .gal figure:hover img{transform:scale(1.04)}
 
-/* ---------- TRUST ---------- */
-.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:52px}
-.trust .cell{background:var(--bg-soft);padding:30px 26px}
-.trust .cell h4{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-family:var(--sans);font-weight:400}
-.trust .cell p{margin-top:12px;color:var(--ink-dim);font-size:.96rem}
+/* faixa CTA */
+.ctaband{text-align:center}
+.ctaband h2{margin-bottom:6px}
+.ctaband .btn{margin-top:28px}
 
-/* ---------- TESTIMONIALS ---------- */
-.stars{color:var(--gold);letter-spacing:.28em;font-size:.82rem}
-.tgrid{columns:3;column-gap:20px;margin-top:52px}
-.tcard{break-inside:avoid;background:#fff;border:1px solid rgba(26,24,23,.09);padding:28px 26px 24px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.tcard p{font-family:var(--serif);font-size:1.14rem;line-height:1.55;color:#2A2622;font-style:italic}
-.tcard .who{margin-top:18px;padding-top:16px;border-top:1px solid rgba(26,24,23,.1);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#8A7C6A}
-.tcard .src{display:block;margin-top:5px;letter-spacing:.14em;font-size:.6rem;color:#A99C8B}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo img{aspect-ratio:2/3;object-fit:cover;width:100%}
+.duo .tall{margin-top:32px}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:30px}
+.trust .cell{background:var(--bg-soft);padding:22px 20px}
+.trust h4{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.trust p{margin-top:8px;color:var(--ink-dim);font-size:.9rem;line-height:1.6}
 
-/* ---------- FORM ---------- */
-.formsec{background:var(--bg-cream);color:var(--ink-dark)}
-.formbox{max-width:660px;margin:44px auto 0;background:#fff;border:1px solid rgba(26,24,23,.1);padding:clamp(28px,4vw,48px);box-shadow:0 18px 60px rgba(0,0,0,.09)}
-.prog{height:2px;background:rgba(26,24,23,.1);margin-bottom:8px;position:relative}
-.prog i{position:absolute;left:0;top:0;bottom:0;background:var(--gold);width:20%;transition:width .45s cubic-bezier(.4,0,.2,1)}
-.stepnum{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:#9A7B45;margin-bottom:26px;display:block}
-.step{display:none;animation:fade .45s ease both}
-.step.on{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.step h3{font-size:clamp(1.5rem,3vw,2.05rem);color:var(--ink-dark);line-height:1.2}
-.step .help{font-size:.9rem;color:#7A7065;margin-top:10px}
-.opts{margin-top:26px;display:grid;gap:10px}
-.opt{border:1px solid rgba(26,24,23,.16);padding:16px 20px;cursor:pointer;transition:.22s;font-size:.98rem;color:#3A3530;display:flex;align-items:center;gap:14px;background:#fff;text-align:left;font-family:var(--sans);font-weight:300}
-.opt:hover{border-color:var(--gold);background:#FBF8F2}
-.opt.sel{border-color:var(--gold);background:#FBF6EC}
-.opt i{width:7px;height:7px;border-radius:50%;border:1px solid rgba(26,24,23,.3);flex:none}
-.opt.sel i{background:var(--gold);border-color:var(--gold)}
-.fld{margin-top:18px}
-.fld label{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:#8A7C6A;display:block;margin-bottom:8px}
-.fld input{width:100%;border:1px solid rgba(26,24,23,.16);padding:15px 16px;font-family:var(--sans);font-size:1rem;font-weight:300;color:#1A1817;background:#fff;outline:none;transition:.22s}
-.fld input:focus{border-color:var(--gold)}
-.fld input::placeholder{color:#B3AA9E}
-.navrow{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:30px}
-.back{background:none;border:0;font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#8A7C6A;cursor:pointer;padding:8px 0}
-.back:hover{color:var(--gold)}
-.next{border:1px solid var(--ink-dark);background:var(--ink-dark);color:#F3EEE6;padding:16px 34px;font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:.28s}
-.next:hover{background:var(--gold);border-color:var(--gold);color:#0C0C0C}
-.next[disabled]{opacity:.35;cursor:not-allowed}
-.privacy{font-size:.72rem;color:#9A9186;text-align:center;margin-top:18px}
-.done{display:none;text-align:center;padding:14px 0}
-.done.on{display:block;animation:fade .5s ease both}
-.done .mark{width:56px;height:56px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;color:var(--gold);font-size:1.5rem}
+/* depoimentos */
+.stars{color:var(--gold);letter-spacing:.26em;font-size:.8rem}
+.tgrid{columns:2;column-gap:18px;margin-top:44px}
+.tcard{break-inside:avoid;background:#fff;border:1px solid rgba(26,24,23,.09);padding:24px 22px 20px;margin-bottom:18px}
+.tcard p{font-family:var(--serif);font-size:1.1rem;line-height:1.55;color:#2A2622;font-style:italic}
+.tcard .who{margin-top:14px;padding-top:12px;border-top:1px solid rgba(26,24,23,.1);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:#8A7C6A}
+.tcard .src{display:block;margin-top:4px;letter-spacing:.12em;font-size:.58rem;color:#A99C8B}
 
-/* ---------- CLOSING ---------- */
-.closing{position:relative;text-align:center;padding:clamp(96px,14vw,180px) 0}
+/* fechamento */
+.closing{position:relative;text-align:center;padding:clamp(84px,11vw,150px) 0}
 .closing-bg{position:absolute;inset:0;overflow:hidden}
 .closing-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.closing-bg::after{content:'';position:absolute;inset:0;background:rgba(8,8,8,.72)}
+.closing-bg::after{content:'';position:absolute;inset:0;background:rgba(8,8,8,.74)}
 .closing .wrap{position:relative;z-index:2}
-.verse{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--gold);margin-top:26px}
+.verse{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--gold);margin-top:24px}
 
-footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-.foot .l{font-size:.72rem;letter-spacing:.16em;color:var(--ink-dim)}
+footer{background:#080808;padding:44px 0 34px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot .l{font-size:.7rem;letter-spacing:.14em;color:var(--ink-dim)}
 .foot a:hover{color:var(--gold)}
 
-/* WhatsApp float */
-.wa{position:fixed;right:20px;bottom:20px;z-index:90;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(0,0,0,.32);transition:.3s}
-.wa:hover{transform:scale(1.07)}
-.wa svg{width:28px;height:28px;fill:#fff}
+/* botão flutuante */
+.wa{position:fixed;right:20px;bottom:20px;z-index:95;width:56px;height:56px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(0,0,0,.35);transition:.3s}
+.wa:hover{background:#2EE372;transform:scale(1.07)}
+.wa svg{width:30px;height:30px;fill:#fff}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
 
-@media(max-width:899px){
-  .hero-bg img{object-position:center 44%}
-}
 @media(max-width:900px){
-  .split{grid-template-columns:1fr;gap:34px}
-  .split.rev .col-img{order:0}
-  .gaze{grid-template-columns:1fr}
-  .tgrid{columns:2}
-  .proofbar .grid{grid-template-columns:1fr 1fr}
-  .proofbar .item:nth-child(2){border-right:0}
-  .proofbar .item:nth-child(1),.proofbar .item:nth-child(2){border-bottom:1px solid var(--line)}
   .gal{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:30px}
+  .tgrid{columns:1}
+  .hero-bg img{object-position:center 44%}
 }
 @media(max-width:640px){
   body{font-size:16px}
-  .hero{min-height:540px}
-  .hero .eyebrow{font-size:.58rem;letter-spacing:.22em}
-  .hero h1{font-size:1.95rem;line-height:1.18}
-  .hero p.sub{font-size:.88rem;margin-top:16px;max-width:330px}
-  .hero .btn{margin-top:26px}
-  .hero-foot{font-size:.56rem;letter-spacing:.2em;bottom:22px;padding:0 20px}
-  .btn-lg{padding:17px 30px;font-size:.68rem}
-  .tgrid{columns:1}
+  .hero{min-height:520px}
+  .hero .eyebrow{font-size:.56rem;letter-spacing:.2em}
+  .hero h1{font-size:1.95rem}
+  .hero p.sub{font-size:.87rem;max-width:320px;margin-top:14px}
+  .btn-lg{padding:17px 26px;font-size:.66rem}
   .trust{grid-template-columns:1fr}
-  .nav-cta{display:none}
-  .gal{grid-template-columns:1fr;gap:16px}
-  .duo .tall{margin-top:0}
+  .wa{padding:12px 16px 12px 13px;font-size:.62rem}
+  .wa span{display:none}
+  .wa{border-radius:50%;padding:14px}
 }
 </style>
 </head>
@@ -230,7 +164,7 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
 <nav id="nav">
   <div class="wrap nav-in">
     <a href="#topo" class="brand">Paulo &amp; Paula<small>Fotografia de Casamento</small></a>
-    <a href="#consulta" class="btn nav-cta">Consultar disponibilidade</a>
+    <a href="#" class="btn zap" data-zap>Consultar data</a>
   </div>
 </nav>
 
@@ -246,12 +180,13 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
     <span class="eyebrow">Fotografia de casamento · Florianópolis</span>
     <h1>Um dia para viver.<br><em>Imagens para reviver.</em></h1>
     <p class="sub">Casamentos em Florianópolis e região, com Paulo e Paula juntos em toda a cobertura.</p>
-    <a href="#consulta" class="btn btn-solid btn-lg">Consultar disponibilidade</a>
+    <a href="#" class="btn btn-solid btn-lg zap" data-zap>Consultar disponibilidade
+    </a>
   </div>
-  <div class="hero-foot">Agenda limitada · Poucos casamentos por temporada</div>
+  <div class="hero-foot">Agenda 2027 e 2028 aberta · Poucas datas por temporada</div>
 </header>
 
-<!-- PROOF BAR -->
+<!-- PROVA -->
 <section class="proofbar" style="padding:0">
   <div class="wrap" style="padding:0">
     <div class="single">
@@ -265,38 +200,36 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
 <!-- GALERIA -->
 <section class="sec-soft">
   <div class="wrap">
-    <div class="gal" style="margin-top:0">
-      <figure class="rv"><img src="assets/img/g01.jpg" alt="Beijo dos noivos ao pôr do sol com o véu ao vento" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g02.jpg" alt="Retrato da noiva com a renda do vestido" loading="lazy"></figure>
+    <div class="gal">
+      <figure class="rv"><img src="assets/img/g01.jpg" alt="Beijo dos noivos ao pôr do sol" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g02.jpg" alt="Retrato da noiva" loading="lazy"></figure>
       <figure class="rv"><img src="assets/img/g03.jpg" alt="Saída dos noivos entre pétalas" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g04.jpg" alt="Cerimônia à beira-mar" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g05.jpg" alt="Noiva no deck sobre a água" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g06.jpg" alt="Noivos ao entardecer" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g07.jpg" alt="Saída da igreja em preto e branco" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g08.jpg" alt="Noiva descendo a escada" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g09.jpg" alt="Cerimônia sob estrutura de vidro" loading="lazy"></figure>
       <figure class="rv"><img src="assets/img/g10.jpg" alt="Beijo dos noivos entre as flores" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g11.jpg" alt="Detalhe do vestido da noiva" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g12.jpg" alt="Noivos caminhando em preto e branco" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g13.jpg" alt="Decoração floral da recepção" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g14.jpg" alt="Retrato da noiva antes da cerimônia" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g15.jpg" alt="Celebração na saída dos noivos" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g07.jpg" alt="Saída da igreja em preto e branco" loading="lazy"></figure>
       <figure class="rv"><img src="assets/img/g16.jpg" alt="Retrato dos noivos" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g17.jpg" alt="Noiva no deck entre as palmeiras" loading="lazy"></figure>
-      <figure class="rv"><img src="assets/img/g18.jpg" alt="Brinde dos noivos em preto e branco" loading="lazy"></figure>
-    </div>
-
-    <div class="ctarow rv">
-      <a href="#consulta" class="btn btn-solid btn-lg">Consultar disponibilidade</a>
+      <figure class="rv"><img src="assets/img/g12.jpg" alt="Noivos caminhando em preto e branco" loading="lazy"></figure>
+      <figure class="rv"><img src="assets/img/g11.jpg" alt="Detalhe do vestido da noiva" loading="lazy"></figure>
     </div>
   </div>
 </section>
 
-<!-- OS ARTISTAS -->
-<section>
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap rv">
+    <span class="eyebrow">Disponibilidade</span>
+    <h2 style="margin-top:16px">Vamos conhecer<br>a história de vocês.</h2>
+    <div class="rule"></div>
+    <p class="lead" style="max-width:520px;margin-left:auto;margin-right:auto">Mande uma mensagem com a data prevista e o local. Respondemos no mesmo dia com a disponibilidade da agenda.</p>
+    <a href="#" class="btn btn-solid btn-lg zap" data-zap>Falar no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- PAULO E PAULA -->
+<section class="sec-soft">
   <div class="wrap">
-    <div class="split rev">
-      <div class="col-img rv">
+    <div class="split">
+      <div class="rv">
         <div class="duo">
           <img src="assets/img/paulo.jpg" alt="Paulo Ferreira">
           <img src="assets/img/paula.jpg" class="tall" alt="Paula Knoll">
@@ -304,53 +237,16 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
       </div>
       <div class="rv">
         <span class="eyebrow">Por trás das lentes</span>
-        <h2 style="margin-top:18px">Somos Paulo<br>e Paula.</h2>
+        <h2 style="margin-top:16px">Somos Paulo<br>e Paula.</h2>
         <div class="rule left"></div>
-        <p class="lead">Somos marido e mulher, pais de duas meninas e um casal que acredita profundamente no casamento. Trabalhamos juntos, unindo dois olhares, direção cuidadosa e sensibilidade para registrar a beleza de cada casal sem retirar a verdade do que está sendo vivido.</p>
-        <p class="lead">Fotografar um casamento é preservar gestos, lágrimas e abraços que não poderão ser repetidos, mas que poderão ser revividos por gerações.</p>
-        <p class="lead" style="font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--gold)">“Façam tudo com amor.” — 1 Coríntios 16:14</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- A EXPERIÊNCIA -->
-<section class="sec-soft">
-  <div class="wrap">
-    <div style="text-align:center;max-width:700px;margin:0 auto" class="rv">
-      <span class="eyebrow">A experiência</span>
-      <h2 style="margin-top:18px">Vocês vivem.<br>Nós cuidamos.</h2>
-      <div class="rule"></div>
-      <p class="lead">Pensamos em cada detalhe para que o casamento não se transforme em uma sessão de fotos, mas em uma experiência plenamente vivida.</p>
-    </div>
-    <div class="gaze rv" style="background:var(--line)">
-      <div class="cell" style="background:var(--bg-soft)"><div class="n">01 · Antes</div><h4>Planejamento</h4><p>Conhecemos a história de vocês, alinhamos o cronograma e antecipamos luz, espaços e momentos indispensáveis.</p></div>
-      <div class="cell" style="background:var(--bg-soft)"><div class="n">02 · Durante</div><h4>Presença discreta</h4><p>Conduzimos quando necessário e permanecemos discretos quando o momento precisa apenas ser vivido.</p></div>
-      <div class="cell" style="background:var(--bg-soft)"><div class="n">03 · Depois</div><h4>Edição autoral</h4><p>Selecionamos e editamos cada imagem para construir uma narrativa coerente, completa e verdadeira.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SEGURANÇA -->
-<section>
-  <div class="wrap">
-    <div class="split">
-      <div class="rv">
-        <span class="eyebrow">Confiança</span>
-        <h2 style="margin-top:18px">Segurança<br>silenciosa.</h2>
-        <div class="rule left"></div>
-        <p class="lead">A técnica permanece nos bastidores para que a tranquilidade permaneça com vocês. Estrutura preparada para diferentes cenários e protocolos de proteção de imagens.</p>
+        <p class="lead">Somos marido e mulher, pais de duas meninas e um casal que acredita profundamente no casamento. Fotografamos juntos, unindo dois olhares para registrar a beleza de cada casal sem retirar a verdade do que está sendo vivido.</p>
         <div class="trust">
-          <div class="cell"><h4>Paulo e Paula presentes</h4><p>Dois profissionais principais, com olhares complementares, do início ao fim.</p></div>
-          <div class="cell"><h4>Redundância</h4><p>Câmeras reserva e gravação simultânea em dois cartões.</p></div>
-          <div class="cell"><h4>Domínio de luz</h4><p>Iluminação para igrejas, espaços externos, ambientes escuros e festas.</p></div>
-          <div class="cell"><h4>Proteção dos arquivos</h4><p>Fluxo organizado de cópia e armazenamento após o casamento.</p></div>
-        </div>
-        <div style="margin-top:34px">
-          <a href="#consulta" class="btn btn-solid">Consultar disponibilidade</a>
+          <div class="cell"><h4>Sempre os dois</h4><p>Dois profissionais principais, do início ao fim.</p></div>
+          <div class="cell"><h4>Redundância</h4><p>Câmeras reserva e gravação em dois cartões.</p></div>
+          <div class="cell"><h4>Domínio de luz</h4><p>Igreja, praia, ambiente escuro e festa à noite.</p></div>
+          <div class="cell"><h4>Arquivos protegidos</h4><p>Cópia e armazenamento organizados após o casamento.</p></div>
         </div>
       </div>
-      <div class="col-img rv"><img src="assets/img/conf.jpg" alt="Cerimônia vista do corredor"></div>
     </div>
   </div>
 </section>
@@ -358,138 +254,45 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
 <!-- DEPOIMENTOS -->
 <section class="sec-cream">
   <div class="wrap">
-    <div style="text-align:center;max-width:720px;margin:0 auto" class="rv">
+    <div style="text-align:center;max-width:660px;margin:0 auto" class="rv">
       <span class="eyebrow">Depoimentos</span>
-      <h2 style="margin-top:18px">Quem viveu, sentiu.</h2>
+      <h2 style="margin-top:16px">Quem viveu, sentiu.</h2>
       <div class="rule"></div>
-      <p class="lead">A experiência de um casamento não termina na entrega das imagens. Ela permanece na forma como cada casal se sentiu durante todo o caminho.</p>
-      <div class="stars" style="margin-top:18px">★★★★★</div>
+      <div class="stars">★★★★★</div>
     </div>
 
     <div class="tgrid">
-      <div class="tcard rv"><p>“Ficamos completamente apaixonados. Sentamos juntos pra ver e foi impossível não se emocionar, cada foto nos fez reviver o dia inteirinho. Vocês superaram todas as expectativas.”</p><div class="who">Johnatan &amp; Kauana<span class="src">Depoimento enviado após a entrega</span></div></div>
+      <div class="tcard rv"><p>“Ficamos completamente apaixonados. Sentamos juntos pra ver e foi impossível não se emocionar, cada foto nos fez reviver o dia inteirinho. Vocês superaram todas as expectativas.”</p><div class="who">Johnatan &amp; Kauana<span class="src">Mensagem após a entrega</span></div></div>
 
-      <div class="tcard rv"><p>“O Paulo não somente fotografa, ele capta os sentimentos através das suas lentes. Quando recebemos as fotos, conseguimos reviver o exato momento em que elas foram feitas.”</p><div class="who">Josiane &amp; Jederson<span class="src">★★★★★ Avaliação no Google</span></div></div>
+      <div class="tcard rv"><p>“O Paulo não somente fotografa, ele capta os sentimentos através das suas lentes. Quando recebemos as fotos, conseguimos reviver o exato momento em que elas foram feitas.”</p><div class="who">Josiane &amp; Jederson<span class="src">★★★★★ Google</span></div></div>
 
-      <div class="tcard rv"><p>“Olhamos todas as fotos, nos emocionamos, rimos, nos emocionamos de novo. A edição é incrível, todas as fotos impecáveis. Somos um casal beeem envergonhado, e o carinho e a orientação de vocês foi o que mais nos tranquilizou.”</p><div class="who">Nauana &amp; Roberto<span class="src">Depoimento enviado após a entrega</span></div></div>
+      <div class="tcard rv"><p>“O atendimento foi excelente do início ao fim. Eu e o Pablo somos tímidos, e o Paulo nos fez sentir muito confortáveis. As fotos ficaram exatamente como imaginávamos e foram entregues dentro do prazo.”</p><div class="who">Kamila Fernandes<span class="src">★★★★★ Google · Local Guide</span></div></div>
 
-      <div class="tcard rv"><p>“Eu estava nervosa, tanto pelo casamento quanto pelo clima que não estava de sol. A atenção que eles deram fez toda a diferença. E mesmo sem o tão esperado sol, as fotos ficaram impecáveis.”</p><div class="who">Thais &amp; Eduardo<span class="src">★★★★★ Avaliação no Google</span></div></div>
+      <div class="tcard rv"><p>“Eu estava nervosa, tanto pelo casamento quanto pelo clima que não estava de sol. A atenção que eles deram fez toda a diferença. E mesmo sem o tão esperado sol, as fotos ficaram impecáveis.”</p><div class="who">Thais &amp; Eduardo<span class="src">★★★★★ Google</span></div></div>
 
-      <div class="tcard rv"><p>“Cada clique foi feito com tanto cuidado e sensibilidade que conseguimos reviver todas as emoções sempre que vemos as fotos.”</p><div class="who">Thylara &amp; Pablo<span class="src">Depoimento enviado após a entrega</span></div></div>
-
-      <div class="tcard rv"><p>“O atendimento foi excelente do início ao fim. Eu e o Pablo somos tímidos, e o Paulo nos fez sentir muito confortáveis. As fotos ficaram exatamente como imaginávamos e foram entregues dentro do prazo.”</p><div class="who">Kamila Fernandes<span class="src">★★★★★ Avaliação no Google · Local Guide</span></div></div>
-
-      <div class="tcard rv"><p>“Nosso dia foi muito mais do que imaginávamos. Os registros que você e a Paula fizeram foram perfeitos. Não tenho nem palavras para descrever minha gratidão.”</p><div class="who">Angélica &amp; Ricardo<span class="src">Depoimento enviado após a entrega</span></div></div>
-
-      <div class="tcard rv"><p>“Vocês juntos têm olhares que nem todos conseguem captar. Tão detalhistas em cada momento. Trabalho impecável.”</p><div class="who">Thamara &amp; Brayan<span class="src">Depoimento enviado após a entrega</span></div></div>
-
-      <div class="tcard rv"><p>“Se você quer um fotógrafo que registre tudo, até os mínimos detalhes, e que faça a diferença deixando todos à vontade, é o Paulo. Do pré-wedding ao dia da festa, indico, indico e indico.”</p><div class="who">Jessica Regis<span class="src">★★★★★ Avaliação no Google</span></div></div>
-    </div>
-
-    <div class="ctarow rv">
-      <a href="#consulta" class="btn btn-solid btn-lg" style="border-color:var(--ink-dark);background:var(--ink-dark);color:#F3EEE6">Consultar disponibilidade</a>
-    </div>
-  </div>
-</section>
-
-<!-- FORMULÁRIO -->
-<section class="formsec" id="consulta">
-  <div class="wrap wrap-narrow">
-    <div style="text-align:center" class="rv">
-      <span class="eyebrow">Disponibilidade</span>
-      <h2 style="margin-top:18px">Vamos conhecer<br>a história de vocês.</h2>
-      <div class="rule"></div>
-      <p class="lead">Reservamos poucos casamentos por temporada para manter a mesma dedicação em cada história. Responda quatro perguntas rápidas e falamos com vocês no WhatsApp.</p>
-    </div>
-
-    <div class="formbox rv">
-      <div class="prog"><i id="bar"></i></div>
-      <span class="stepnum" id="stepnum">Passo 1 de 5</span>
-
-      <form id="f" novalidate>
-        <!-- 1 -->
-        <div class="step on" data-step="1">
-          <h3>Quando será o casamento?</h3>
-          <p class="help">Se a data ainda não estiver fechada, tudo bem.</p>
-          <div class="fld"><label>Data prevista</label><input type="date" id="data"></div>
-          <div class="opts" style="margin-top:14px">
-            <button type="button" class="opt" data-q="data" data-v="Ainda sem data definida"><i></i>Ainda não definimos a data</button>
-          </div>
-          <div class="navrow"><span></span><button type="button" class="next" data-next>Continuar</button></div>
-        </div>
-
-        <!-- 2 -->
-        <div class="step" data-step="2">
-          <h3>Onde será a celebração?</h3>
-          <p class="help">Cidade e, se já souberem, o espaço ou a igreja.</p>
-          <div class="fld"><label>Local</label><input type="text" id="local" placeholder="Ex.: Florianópolis · Espaço à beira-mar"></div>
-          <div class="navrow"><button type="button" class="back" data-back>Voltar</button><button type="button" class="next" data-next>Continuar</button></div>
-        </div>
-
-        <!-- 3 -->
-        <div class="step" data-step="3">
-          <h3>Quantos convidados vocês esperam?</h3>
-          <p class="help">Uma estimativa já nos ajuda a planejar a cobertura.</p>
-          <div class="opts">
-            <button type="button" class="opt" data-q="convidados" data-v="Até 80 convidados"><i></i>Até 80 convidados</button>
-            <button type="button" class="opt" data-q="convidados" data-v="De 80 a 150 convidados"><i></i>De 80 a 150 convidados</button>
-            <button type="button" class="opt" data-q="convidados" data-v="De 150 a 250 convidados"><i></i>De 150 a 250 convidados</button>
-            <button type="button" class="opt" data-q="convidados" data-v="Mais de 250 convidados"><i></i>Mais de 250 convidados</button>
-          </div>
-          <div class="navrow"><button type="button" class="back" data-back>Voltar</button><button type="button" class="next" data-next disabled>Continuar</button></div>
-        </div>
-
-        <!-- 4 -->
-        <div class="step" data-step="4">
-          <h3>Qual o investimento previsto para a fotografia?</h3>
-          <p class="help">Saber a faixa de vocês nos permite indicar a cobertura certa desde a primeira conversa.</p>
-          <div class="opts">
-            <button type="button" class="opt" data-q="investimento" data-v="Até R$ 4.000"><i></i>Até R$ 4.000</button>
-            <button type="button" class="opt" data-q="investimento" data-v="Entre R$ 4.000 e R$ 6.000"><i></i>Entre R$ 4.000 e R$ 6.000</button>
-            <button type="button" class="opt" data-q="investimento" data-v="Entre R$ 6.000 e R$ 9.000"><i></i>Entre R$ 6.000 e R$ 9.000</button>
-            <button type="button" class="opt" data-q="investimento" data-v="Acima de R$ 9.000"><i></i>Acima de R$ 9.000</button>
-          </div>
-          <div class="navrow"><button type="button" class="back" data-back>Voltar</button><button type="button" class="next" data-next disabled>Continuar</button></div>
-        </div>
-
-        <!-- 5 -->
-        <div class="step" data-step="5">
-          <h3>Por fim, como podemos chamar vocês?</h3>
-          <p class="help">É com esse nome que vamos começar a conversa.</p>
-          <div class="fld"><label>Nome dos noivos</label><input type="text" id="nome" placeholder="Ex.: Caroline e Bruno" autocomplete="name"></div>
-          <div class="navrow"><button type="button" class="back" data-back>Voltar</button><button type="submit" class="next" id="send">Falar no WhatsApp</button></div>
-          <p class="privacy">Suas respostas seguem direto para a conversa. Sem listas, sem disparos.</p>
-        </div>
-      </form>
-
-      <div class="done" id="done">
-        <div class="mark">✓</div>
-        <h3 style="font-family:var(--serif);font-size:1.9rem;color:var(--ink-dark)">Tudo certo, obrigado.</h3>
-        <p class="help" style="margin-top:12px">Estamos abrindo o WhatsApp com as suas respostas já preenchidas. Se não abrir sozinho, toque no botão abaixo.</p>
-        <a href="#" class="next" id="walink" style="display:inline-block;margin-top:24px;text-decoration:none">Abrir conversa no WhatsApp</a>
-      </div>
+      <div class="tcard rv"><p>“Se você quer um fotógrafo que registre tudo, até os mínimos detalhes, e que faça a diferença deixando todos à vontade, é o Paulo. Do pré-wedding ao dia da festa, indico, indico e indico.”</p><div class="who">Jessica Regis<span class="src">★★★★★ Google</span></div></div>
     </div>
   </div>
 </section>
 
 <!-- FECHAMENTO -->
 <section class="closing">
-  <div class="closing-bg"><img src="assets/img/cta.jpg" alt="Saída dos noivos" loading="lazy"></div>
+  <div class="closing-bg"><img src="assets/img/cta.jpg" alt="Noivos ao anoitecer" loading="lazy"></div>
   <div class="wrap">
     <span class="eyebrow">Florianópolis · Santa Catarina</span>
-    <h2 style="margin-top:20px;color:#fff">Será uma alegria<br>conhecer a história de vocês.</h2>
+    <h2 style="margin-top:18px;color:#fff">Será uma alegria<br>conhecer a história de vocês.</h2>
     <div class="rule"></div>
-    <p class="lead" style="max-width:620px;margin:0 auto;color:#CFC8BE">Quando uma história é confiada a nós, ela é recebida com amor, cuidado e propósito.</p>
-    <a href="#consulta" class="btn btn-solid btn-lg" style="margin-top:38px">Consultar disponibilidade</a>
+    <a href="#" class="btn btn-solid btn-lg zap" data-zap style="margin-top:30px">Consultar disponibilidade
+    </a>
     <p class="verse">“Façam tudo com amor.” — 1 Coríntios 16:14</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot">
-    <div class="brand" style="font-size:1rem">Paulo &amp; Paula<small>Fotografia de Casamento</small></div>
+    <div class="brand" style="font-size:.95rem">Paulo &amp; Paula<small>Fotografia de Casamento</small></div>
     <div class="l">
-      <a href="https://wa.me/5548984255252" target="_blank" rel="noopener">(48) 98425-5252</a>
+      <a href="#" class="zap" data-zap>(48) 98425-5252</a>
       &nbsp;·&nbsp;
       <a href="https://instagram.com/pauloferreirafotografias" target="_blank" rel="noopener">@pauloferreirafotografias</a>
     </div>
@@ -497,124 +300,45 @@ footer{background:#080808;padding:56px 0 40px;border-top:1px solid var(--line)}
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5548984255252?text=Ol%C3%A1%2C%20Paulo%20e%20Paula!%20Gostaria%20de%20consultar%20a%20disponibilidade%20para%20o%20nosso%20casamento." target="_blank" rel="noopener" aria-label="WhatsApp" onclick="if(window.fbq)fbq('track','Contact')">
+<a class="wa zap" href="#" data-zap aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2z"/></svg>
+  <span>Falar agora</span>
 </a>
 
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-/* nav */
 const nav = document.getElementById('nav');
 addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60));
 
-/* reveal */
 if ('IntersectionObserver' in window) {
-  const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1 });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 } else {
   document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
 }
 
-/* ---------- FORMULÁRIO MULTI ETAPAS ---------- */
+/* ---------- WHATSAPP ---------- */
 const WHATS = '5548984255252';
-const TOTAL = 5;
-let cur = 1;
-const answers = {};
+const MSG = [
+  'Olá, Paulo e Paula! Vi o trabalho de vocês e gostaria de consultar a disponibilidade.',
+  '',
+  'Data do casamento: ',
+  'Local: ',
+  'Convidados: '
+].join('\n');
+const WA_URL = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(MSG);
 
-const bar = document.getElementById('bar');
-const stepnum = document.getElementById('stepnum');
-const steps = [...document.querySelectorAll('.step')];
-
-function render(scroll) {
-  steps.forEach(s => s.classList.toggle('on', +s.dataset.step === cur));
-  bar.style.width = (cur / TOTAL * 100) + '%';
-  stepnum.textContent = 'Passo ' + cur + ' de ' + TOTAL;
-  if (scroll) {
-    const box = document.querySelector('.formbox');
-    const y = box.getBoundingClientRect().top + scrollY - 90;
-    if (Math.abs(scrollY - y) > 40) scrollTo({ top: y, behavior: 'smooth' });
-  }
-}
-render(false);
-
-function go(n) {
-  cur = Math.min(TOTAL, Math.max(1, n));
-  render(true);
-  if (window.fbq) fbq('trackCustom', 'FormStep', { step: cur });
-}
-
-document.querySelectorAll('[data-next]').forEach(b => b.addEventListener('click', () => {
-  const step = b.closest('.step');
-  const n = +step.dataset.step;
-  if (n === 1) answers.data = answers.data || (document.getElementById('data').value || 'Ainda sem data definida');
-  if (n === 2) answers.local = document.getElementById('local').value.trim() || 'Não informado';
-  go(cur + 1);
-}));
-
-document.querySelectorAll('[data-back]').forEach(b => b.addEventListener('click', () => go(cur - 1)));
-
-document.querySelectorAll('.opt').forEach(o => o.addEventListener('click', () => {
-  const step = o.closest('.step');
-  const n = +step.dataset.step;
-  step.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
-  o.classList.add('sel');
-  answers[o.dataset.q] = o.dataset.v;
-
-  const nx = step.querySelector('[data-next]');
-  if (nx) { nx.disabled = false; setTimeout(() => nx.click(), 320); }
-}));
-
-/* selecionar data limpa a opção "sem data" */
-document.getElementById('data').addEventListener('change', e => {
-  if (e.target.value) {
-    answers.data = new Date(e.target.value + 'T12:00:00').toLocaleDateString('pt-BR');
-    document.querySelectorAll('[data-q="data"]').forEach(x => x.classList.remove('sel'));
-  }
-});
-
-let sent = false;
-function finish() {
-  if (sent) return;
-  const nome = document.getElementById('nome').value.trim();
-  if (nome.length < 2) {
-    alert('Por favor, escreva o nome de vocês para começarmos a conversa.');
-    document.getElementById('nome').focus();
-    return;
-  }
-  sent = true;
-  answers.nome = nome;
-
-  const msg = [
-    'Olá, Paulo e Paula!',
-    '',
-    'Somos ' + nome + ' e gostaríamos de consultar a disponibilidade de vocês.',
-    '',
-    '*Data:* ' + (answers.data || 'Ainda sem data definida'),
-    '*Local:* ' + (answers.local || 'Não informado'),
-    '*Convidados:* ' + (answers.convidados || 'Não informado'),
-    '*Investimento previsto:* ' + (answers.investimento || 'Não informado')
-  ].join('\n');
-
-  const url = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg);
-
-  if (window.fbq) fbq('track', 'Lead', { content_name: 'LP Casamento', value: 1, currency: 'BRL' });
-
-  document.getElementById('f').style.display = 'none';
-  document.querySelector('.prog').style.display = 'none';
-  stepnum.style.display = 'none';
-  document.getElementById('walink').href = url;
-  document.getElementById('done').classList.add('on');
-
-  // navegação na mesma aba: nunca é bloqueada por popup blocker
-  setTimeout(() => { location.href = url; }, 1100);
-}
-
-document.getElementById('f').addEventListener('submit', e => { e.preventDefault(); finish(); });
-
-/* Enter no campo de nome conclui o formulário */
-document.getElementById('nome').addEventListener('keydown', e => {
-  if (e.key === 'Enter') { e.preventDefault(); finish(); }
+document.querySelectorAll('[data-zap]').forEach(el => {
+  el.setAttribute('href', WA_URL);
+  el.setAttribute('target', '_blank');
+  el.setAttribute('rel', 'noopener');
+  el.addEventListener('click', () => {
+    if (window.fbq) {
+      fbq('track', 'Lead', { content_name: 'WhatsApp', value: 1, currency: 'BRL' });
+      fbq('track', 'Contact');
+    }
+  });
 });
 </script>
 </body>
